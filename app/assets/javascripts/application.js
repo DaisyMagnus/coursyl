@@ -15,13 +15,19 @@
 //= require d3
 //= require_tree .
 
-//disable button when clicked//
+// disable button when clicked
 function disabledButton(){
-  var button = document.getElementById("btn").disabled = 'true';
+  var button = document.getElementById("btn").disabled;
   button.disabled = 'true';
-
 }
 
+// delete row
+function deleteRow(button){
+  var parentDiv = button.parentNode.parentNode.parentNode;
+  parentDiv.style.display = "none";
+}
+
+// show/hide
 function showHide(){
     if document.getElementsByClassName("fafa-plus").onclick;{
       document.getElementById("course_grade_thresholds_attributes_4_id").style.display ='none';
@@ -35,7 +41,7 @@ function showHide(){
 // // var foo = document.getElementById("row").onload = 'hidden';
 //   alert("WAKE UP!");
 // // foo.style.visibility = 'hidden';
-//x
+// x
 //
 // }
 
@@ -46,8 +52,3 @@ function showHide(){
 //         }, 1000);
 //         return false;
 //       }
-
-
-//document.getElementsByClassName("actions").onclick=false
-
-//hide last empty row of grading scale//
