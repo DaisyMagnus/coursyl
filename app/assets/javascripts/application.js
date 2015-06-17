@@ -14,3 +14,40 @@
 //= require jquery_ujs
 //= require d3
 //= require_tree .
+
+//disable button when clicked//
+function disabledButton(){
+  var button = document.getElementById("btn").disabled = 'true';
+  button.disabled = 'true';
+
+}
+
+function showHide(){
+    if document.getElementsByClassName("fafa-plus").onclick;{
+      document.getElementById("course_grade_thresholds_attributes_4_id").style.display ='none';
+    } else {
+      document.getElementById("course_grade_thresholds_attributes_4_id").style.display ='block';
+      }
+  }
+
+
+// function hideRow() {
+// // var foo = document.getElementById("row").onload = 'hidden';
+//   alert("WAKE UP!");
+// // foo.style.visibility = 'hidden';
+//x
+//
+// }
+
+// check if a row has been shown,
+//
+// button to do smooth scroll: $('html,body').animate({
+//           scrollTop: target.offset().top
+//         }, 1000);
+//         return false;
+//       }
+
+
+//document.getElementsByClassName("actions").onclick=false
+
+//hide last empty row of grading scale//

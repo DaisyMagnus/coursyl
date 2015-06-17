@@ -13,7 +13,7 @@
     </div>
   <% end %>
 
-  <h3>Grading Scale</h3>
+  <h3>Grading Scale </h3>
 
   <p class="lead">List all of the letter grades that can be received along with the minimum
     number grade which earns that letter.  For instance, a 10 point scale starts with (A, 90)
@@ -46,10 +46,10 @@
       <% i += 1 %>
     <% end %>
   </div>
-  <%= link_to '<i class="fa fa-plus"></i> Add Grade Threshold'.html_safe, nil, class: "btn btn-success new-association", "data-index" => i %>
+  <%= link_to '<i class="fa fa-plus"></i> Add Grade Threshold'.html_safe, nil, class: "btn btn-success new-association", "data-index" => i; %>
 
 
   <div class="actions">
-    <%= f.submit class: "btn" %>
+    <%= f.submit class: "btn", onclick: "disabledButton()"; %>
   </div>
 <% end %>
